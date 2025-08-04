@@ -12,9 +12,9 @@ class DesktopContactPage extends StatelessWidget {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return Container(
-      width: 0.9* width,
+      width: 0.9 * width,
       height: 0.5 * height,
-      padding: EdgeInsets.symmetric(horizontal: 0.05* width,vertical: 30),
+      padding: EdgeInsets.symmetric(horizontal: 0.05 * width, vertical: 30),
       child: Stack(
         children: [
           Column(
@@ -55,7 +55,9 @@ class DesktopContactPage extends StatelessWidget {
                               color: Theme.of(context).focusColor,
                               size: 50,
                             ),
-                            SizedBox(width: 0.02*width,),
+                            SizedBox(
+                              width: 0.02 * width,
+                            ),
                             AutoSizeText(
                               'andreas.herzinger02@gmail.com',
                               style: Theme.of(context).textTheme.bodyText1,
@@ -73,7 +75,9 @@ class DesktopContactPage extends StatelessWidget {
                               height: 50,
                               width: 50,
                             ),
-                            SizedBox(width: 0.02*width,),
+                            SizedBox(
+                              width: 0.02 * width,
+                            ),
                             RichText(
                                 text: TextSpan(children: [
                               TextSpan(
@@ -89,7 +93,8 @@ class DesktopContactPage extends StatelessWidget {
                                   text: 'Github Repository ',
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () async {
-                                      final url = 'https://github.com/youngunand';
+                                      final url =
+                                          'https://github.com/aherzinger';
                                       if (await canLaunch(url)) {
                                         await launch(url);
                                       }
@@ -102,23 +107,30 @@ class DesktopContactPage extends StatelessWidget {
                   )
                 ],
               ),
-              
             ],
           ),
           Align(
-                alignment: Alignment.bottomCenter,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [ 
-                    SizedBox(width: 5,),
-                    Icon(Icons.copyright_outlined, color: Theme.of(context).shadowColor,),
-                    SizedBox(width: 5,),
-                    Text('2022 Andreas Herzinger', style: Theme.of(context).textTheme.bodyText1,),
-                    
-                    
-                  ],
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: 5,
                 ),
-              )
+                Icon(
+                  Icons.copyright_outlined,
+                  color: Theme.of(context).shadowColor,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  '2025 Andreas Herzinger',
+                  style: Theme.of(context).textTheme.bodyText1,
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

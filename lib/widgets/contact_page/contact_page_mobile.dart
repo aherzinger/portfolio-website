@@ -15,7 +15,7 @@ class MobileContactPage extends StatelessWidget {
 
     return Container(
       width: width,
-      height: 0.9*height,
+      height: 0.9 * height,
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
       child: Stack(
         children: [
@@ -84,7 +84,7 @@ class MobileContactPage extends StatelessWidget {
                         text: 'Github Repository ',
                         recognizer: TapGestureRecognizer()
                           ..onTap = () async {
-                            final url = 'https://github.com/youngunand';
+                            final url = 'https://github.com/aherzinger';
                             if (await canLaunch(url)) {
                               await launch(url);
                             }
@@ -92,23 +92,31 @@ class MobileContactPage extends StatelessWidget {
                   ])),
                 ],
               ),
-             
-              
             ],
           ),
           Align(
-                alignment: Alignment.bottomCenter,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [ 
-                    SizedBox(width: 5,),
-                    Icon(Icons.copyright_outlined, color: Theme.of(context).shadowColor,),
-                    SizedBox(width: 5,),
-                    Text('2 Andreas Herzinger', style: Theme.of(context).textTheme.bodyText1,),
-                  ],
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                SizedBox(
+                  width: 5,
                 ),
-              )
+                Icon(
+                  Icons.copyright_outlined,
+                  color: Theme.of(context).shadowColor,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  '2 Andreas Herzinger',
+                  style: Theme.of(context).textTheme.bodyText1,
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

@@ -52,7 +52,7 @@ class MobileProjectPage extends StatelessWidget {
                     'fish_finder_5.png'
                   ],
                   title: 'Fish-Finder',
-                  gitHubUrl: 'https://github.com/youngunand/Fishing-App',
+                  gitHubUrl: 'https://github.com/aherzinger/Fishing-App',
                   description:
                       'App for Fishermen, who want to track their catches.',
                   duration: '4 months',
@@ -66,7 +66,7 @@ class MobileProjectPage extends StatelessWidget {
                 ProjectShowCase(
                   picturePaths: ['zivi_counter.png'],
                   title: 'Zivi-Counter',
-                  gitHubUrl: 'https://github.com/youngunand/Zivi-Counter',
+                  gitHubUrl: 'https://github.com/aherzinger/Zivi-Counter',
                   description:
                       'App for "Zivildiener" in Austria, who want to know when their Zivildienst is done.',
                   duration: '3 days',
@@ -80,7 +80,7 @@ class MobileProjectPage extends StatelessWidget {
                         'App I built for my father as he wanted to have an UI for his Radio Project.',
                     duration: '1 week',
                     gitHubUrl:
-                        'https://github.com/youngunand/Rasperry-Pi-Radio',
+                        'https://github.com/aherzinger/Rasperry-Pi-Radio',
                     technologiesUsed: ['python', 'rasperry_pi', 'git'],
                     autoSizeGroup: autoSizeGroup,
                     picturePaths: ['raspy_radio.png']),
@@ -91,7 +91,7 @@ class MobileProjectPage extends StatelessWidget {
                     title: "Math Mini-Game",
                     description:
                         "App that let's user paint a tick, if he/she thinks the math statement is true. ",
-                    gitHubUrl: "https://github.com/youngunand/Gesture-Game",
+                    gitHubUrl: "https://github.com/aherzinger/Gesture-Game",
                     duration: "1 week",
                     technologiesUsed: ["flutter", "dart", "git"],
                     autoSizeGroup: autoSizeGroup,
@@ -107,9 +107,9 @@ class MobileProjectPage extends StatelessWidget {
                     description:
                         "Jupyter Notebooks that compares different Roulette Bankroll-Strategies",
                     gitHubUrl:
-                        "https://github.com/youngunand/Us-European-Roulette",
+                        "https://github.com/aherzinger/Us-European-Roulette",
                     duration: "1 week",
-                    technologiesUsed: ["python","jupyter","git"],
+                    technologiesUsed: ["python", "jupyter", "git"],
                     autoSizeGroup: autoSizeGroup,
                     picturePaths: ["roulette_strategies.png"]),
               ],
