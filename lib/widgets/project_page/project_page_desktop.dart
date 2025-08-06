@@ -63,7 +63,7 @@ class DesktopProjectPage extends StatelessWidget {
                     title: 'Rankify',
                     gitHubUrl: 'https://github.com/DataScienceUIBK/Rankify',
                     description:
-                        'Modular Framework for Retrieval Augmented Generation (RAG) proposed by Data Science Group of UIBK. Included multiple LLM endpoints, restructured RAG Architecture and implemented multiple RAG techniques.',
+                        'Modular Retrieval Augmented Generation (RAG) Framework proposed by Data Science Group of UIBK. Included multiple LLM endpoints, restructured RAG Architecture and implemented multiple RAG techniques.',
                     duration: '5 months',
                     technologiesUsed: ['python','pytorch','tensorflow','huggingface'],
                     googlePlayLinked: false,
@@ -71,10 +71,10 @@ class DesktopProjectPage extends StatelessWidget {
                   ),
                   ProjectShowCase(
                     picturePaths: ['federated_learning.png'],
-                    title: 'Federated Learning',
+                    title: 'Federated TL',
                     gitHubUrl: 'https://github.com/aherzinger/federated-transfer-learning',
                     description:
-                        'Project for my Federated Learning Course - showcasing federated transfer learning with various strategies, examples and use-cases',
+                        'Project for my Federated Learning Course - showcasing Federated Transfer Learning with various strategies, examples and use-cases. Federated Learning Implemenation using Flower AI Framework. ',
                     duration: '2 months',
                     technologiesUsed: ['python','jupyter', 'pytorch', 'flower'],
                     autoSizeGroup: autoSizeGroup,

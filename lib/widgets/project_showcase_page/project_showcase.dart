@@ -123,13 +123,12 @@ class ProjectShowCase extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
-                    height: 0.05 * height,
                     child: AutoSizeText(
                       title,
                       style: Theme.of(context)
                           .textTheme
                           .overline!
-                          .copyWith(fontSize: 32),
+                          .copyWith(fontSize: 26),
                       textAlign: TextAlign.start,
                       maxLines: 1,
                     ),
@@ -150,7 +149,7 @@ class ProjectShowCase extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: SizedBox(
-                height: 0.07 * height,
+                height: 0.09 * height,
                 child: AutoSizeText(
                   description,
                   group: autoSizeGroup,
