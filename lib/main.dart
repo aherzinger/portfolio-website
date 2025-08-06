@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         shadowColor: Color(0xffa8d0e6),
         cardColor: Color(0xff050035),
         textTheme: TextTheme(
-            headline1: TextStyle(fontSize: 200, color: Color(0xfff76c6c),fontFamily: 'Dosis', fontWeight: FontWeight.w600),
+            headline1: TextStyle(fontSize: 200, color: Color(0xfff76c6c), fontFamily: 'Dosis', fontWeight: FontWeight.w600),
             headline2: TextStyle(
                 fontSize: 25, color: Color.fromRGBO(236, 240, 241, 0.75),fontFamily: 'Dosis', fontWeight: FontWeight.w400),
             subtitle1: TextStyle(

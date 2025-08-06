@@ -59,6 +59,45 @@ class DesktopProjectPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ProjectShowCase(
+                    picturePaths: ['rankify.png'],
+                    title: 'Rankify',
+                    gitHubUrl: 'https://github.com/DataScienceUIBK/Rankify',
+                    description:
+                        'Modular Framework for Retrieval Augmented Generation (RAG) proposed by Data Science Group of UIBK. Included multiple LLM endpoints, restructured RAG Architecture and implemented multiple RAG techniques.',
+                    duration: '5 months',
+                    technologiesUsed: ['python','pytorch','tensorflow','huggingface'],
+                    googlePlayLinked: false,
+                    autoSizeGroup: autoSizeGroup,
+                  ),
+                  ProjectShowCase(
+                    picturePaths: ['federated_learning.png'],
+                    title: 'Federated Learning',
+                    gitHubUrl: 'https://github.com/aherzinger/federated-transfer-learning',
+                    description:
+                        'Project for my Federated Learning Course - showcasing federated transfer learning with various strategies, examples and use-cases',
+                    duration: '2 months',
+                    technologiesUsed: ['python','jupyter', 'pytorch', 'flower'],
+                    autoSizeGroup: autoSizeGroup,
+                  ),
+                  ProjectShowCase(
+                      title: 'RAG-based Chatbot',
+                      description:
+                          'App I built for my father as he wanted to have an UI for his Radio Project.',
+                      duration: '1 week',
+                      gitHubUrl:
+                          'https://github.com/aherzinger/Rasperry-Pi-Radio',
+                      technologiesUsed: ['python', 'rasperry_pi', 'git'],
+                      autoSizeGroup: autoSizeGroup,
+                      picturePaths: ['raspy_radio.png']),
+                ],
+              ),
+              SizedBox(
+                height: 0.05 * height,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ProjectShowCase(
                     picturePaths: [
                       'fish_finder_1.png',
                       'fish_finder_2.png',
