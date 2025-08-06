@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'home_screen.dart';
 
@@ -23,30 +24,27 @@ class MyApp extends StatelessWidget {
         shadowColor: Color(0xffa8d0e6),
         cardColor: Color(0xff050035),
         textTheme: TextTheme(
-            headline1: TextStyle(fontSize: 200, color: Color(0xfff76c6c), fontFamily: 'Dosis', fontWeight: FontWeight.w600),
-            headline2: TextStyle(
-                fontSize: 25, color: Color.fromRGBO(236, 240, 241, 0.75),fontFamily: 'Dosis', fontWeight: FontWeight.w400),
-            subtitle1: TextStyle(
+            headline1: GoogleFonts.zenDots(fontSize: 200, color: Color(0xfff76c6c), fontWeight: FontWeight.w600),//#TextStyle(fontSize: 200, color: Color(0xfff76c6c), fontFamily: 'Dosis', fontWeight: FontWeight.w600),
+            headline2: GoogleFonts.zenDots(
+                fontSize: 25, color: Color.fromRGBO(236, 240, 241, 0.75), fontWeight: FontWeight.w400),
+            subtitle1: GoogleFonts.zenDots(
                 fontSize: 22,
                 fontStyle: FontStyle.normal,
-                color: Color(0xffd0d3d4),
-                fontFamily: 'Dosis'),
-            subtitle2: TextStyle(
+                color: Color(0xffd0d3d4)),
+            subtitle2: GoogleFonts.zenDots(
               fontSize: 50,
               color: Color(0xfff76c6c),
-              fontFamily: 'Dosis',
               fontWeight: FontWeight.w600
             ),
-            bodyText1: TextStyle(
+            bodyText1: GoogleFonts.zenDots(
                 fontSize: 18,
                 color: Color.fromRGBO(236, 240, 241, 0.9),
                 height: 1.6,
-                fontFamily: 'Overpass'
                 ),
             bodyText2:
-                TextStyle(fontSize: 18, color: Color(0xfff76c6c), height: 1.6),
-            overline: TextStyle(fontSize: 28, color: Color(0xfff76c6c), fontFamily: 'Dosis', fontWeight: FontWeight.w600),
-            caption: TextStyle(fontSize: 28, color: Color(0xfff76c6c), fontFamily: 'ConcertOne'))),
+                GoogleFonts.zenDots(fontSize: 18, color: Color(0xfff76c6c), height: 1.6),
+            overline: GoogleFonts.zenDots(fontSize: 28, color: Color(0xfff76c6c), fontWeight: FontWeight.w600),
+            caption: GoogleFonts.zenDots(fontSize: 28, color: Color(0xfff76c6c)))),
       home: HomeScreen(),
     );
   }
