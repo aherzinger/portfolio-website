@@ -80,24 +80,6 @@ class DesktopProjectPage extends StatelessWidget {
                     autoSizeGroup: autoSizeGroup,
                   ),
                   ProjectShowCase(
-                      title: 'RAG-based Chatbot',
-                      description:
-                          'App I built for my father as he wanted to have an UI for his Radio Project.',
-                      duration: '1 week',
-                      gitHubUrl:
-                          'https://github.com/aherzinger/Rasperry-Pi-Radio',
-                      technologiesUsed: ['python', 'rasperry_pi', 'git'],
-                      autoSizeGroup: autoSizeGroup,
-                      picturePaths: ['raspy_radio.png']),
-                ],
-              ),
-              SizedBox(
-                height: 0.05 * height,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ProjectShowCase(
                     picturePaths: [
                       'fish_finder_1.png',
                       'fish_finder_2.png',
@@ -116,26 +98,6 @@ class DesktopProjectPage extends StatelessWidget {
                         'https://play.google.com/store/apps/details?id=com.sendit_studios.fishing_app',
                     autoSizeGroup: autoSizeGroup,
                   ),
-                  ProjectShowCase(
-                    picturePaths: ['zivi_counter.png'],
-                    title: 'Zivi-Counter',
-                    gitHubUrl: 'https://github.com/aherzinger/Zivi-Counter',
-                    description:
-                        'App for "Zivildiener" in Austria, who want to know when their Zivildienst is done.',
-                    duration: '3 days',
-                    technologiesUsed: ['dart', 'flutter', 'git'],
-                    autoSizeGroup: autoSizeGroup,
-                  ),
-                  ProjectShowCase(
-                      title: 'Raspy-Radio',
-                      description:
-                          'App I built for my father as he wanted to have an UI for his Radio Project.',
-                      duration: '1 week',
-                      gitHubUrl:
-                          'https://github.com/aherzinger/Rasperry-Pi-Radio',
-                      technologiesUsed: ['python', 'rasperry_pi', 'git'],
-                      autoSizeGroup: autoSizeGroup,
-                      picturePaths: ['raspy_radio.png']),
                 ],
               ),
               SizedBox(
@@ -160,15 +122,14 @@ class DesktopProjectPage extends StatelessWidget {
                     width: 0.2 * height,
                   ),
                   ProjectShowCase(
-                      title: "Simulating Roulette",
-                      description:
-                          "Jupyter Notebooks that compares different Roulette Bankroll-Strategies",
-                      gitHubUrl:
-                          "https://github.com/aherzinger/Us-European-Roulette",
-                      duration: "1 week",
-                      technologiesUsed: ["python", "jupyter", "git"],
-                      autoSizeGroup: autoSizeGroup,
-                      picturePaths: ["roulette_strategies.png"]),
+                    picturePaths: ['zivi_counter.png'],
+                    title: 'Zivi-Counter',
+                    gitHubUrl: 'https://github.com/aherzinger/Zivi-Counter',
+                    description:
+                        'App for "Zivildiener" in Austria, who want to know when their Zivildienst is done.',
+                    duration: '3 days',
+                    technologiesUsed: ['dart', 'flutter', 'git'],
+                    autoSizeGroup: autoSizeGroup,)
                 ],
               )
             ],
