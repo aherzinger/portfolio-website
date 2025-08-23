@@ -52,7 +52,7 @@ class DesktopContactPage extends StatelessWidget {
                           children: [
                             Icon(
                               Icons.email_outlined,
-                              color: Theme.of(context).focusColor,
+                              color: Theme.of(context).hintColor,
                               size: 50,
                             ),
                             SizedBox(
@@ -70,8 +70,12 @@ class DesktopContactPage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
+                            SizedBox(
+                              width: 0.02 * width,
+                            ),
                             Image.asset(
                               'assets/github.png',
+                              color: Theme.of(context).hintColor,
                               height: 50,
                               width: 50,
                             ),
@@ -90,7 +94,7 @@ class DesktopContactPage extends StatelessWidget {
                                       .copyWith(
                                         color: Colors.blue,
                                       ),
-                                  text: 'Github Repository ',
+                                  text: 'Github Repository',
                                   recognizer: TapGestureRecognizer()
                                     ..onTap = () async {
                                       final url =

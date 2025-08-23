@@ -56,10 +56,11 @@ class DesktopVisionPage extends StatelessWidget {
                 width: 375,
                 height: 0.8* height,
                 child: AutoSizeText(
-                  '''To put it short: My Vision is to leave the world behind as a better place.\n
+                  """To put it short: My Vision is to leave the world behind as a better place.\n
 When I was about 10, I was already trying to figure out how it could be possible to end poverty and world hunger. Furthermore I thought about how it would be possible to connect people from different countries, cultures, etc.\n
 These 2 thoughts stuck in my mind ever since they first came up, and I am trying to implement them in my private and also in my working life.\n
-I try to do that by doing what I love and what I am best at. I think a scientific mind with sharp coding skills will eventually result in innovation, therefore that's what I am trying to aquire.\n''',
+Today, I pursue this vision through research and innovation in Natural Language Processing. My focus lies on Retrieval-Augmented Generation (RAG) and building systems like Rankify that aim to improve how people access, understand, and connect with information. By combining curiosity, scientific thinking, and coding, I strive to contribute tools that make knowledge more accessible and impactful for everyone.\n"""
+,
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
               )

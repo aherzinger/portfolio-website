@@ -46,7 +46,7 @@ class MobileContactPage extends StatelessWidget {
                 children: [
                   Icon(
                     Icons.email_outlined,
-                    color: Theme.of(context).focusColor,
+                    color: Theme.of(context).hintColor,
                     size: 50,
                   ),
                   SizedBox(
@@ -66,6 +66,7 @@ class MobileContactPage extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/github.png',
+                    color: Theme.of(context).hintColor,
                     height: 50,
                     width: 50,
                   ),
@@ -81,7 +82,7 @@ class MobileContactPage extends StatelessWidget {
                         style: Theme.of(context).textTheme.bodyText2!.copyWith(
                               color: Colors.blue,
                             ),
-                        text: 'Github Repository ',
+                        text: 'Github Repository',
                         recognizer: TapGestureRecognizer()
                           ..onTap = () async {
                             final url = 'https://github.com/aherzinger';

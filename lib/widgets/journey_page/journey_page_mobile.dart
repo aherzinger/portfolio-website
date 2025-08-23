@@ -10,7 +10,7 @@ class MobileJourneyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    height = MediaQuery.of(context).size.height;
+    height = 1.25* MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return Container(
       width: double.infinity,
@@ -239,10 +239,11 @@ class MobileJourneyPage extends StatelessWidget {
           Container(
               width: double.infinity,
               child: AutoSizeText(
-                '''When I first started to code I felt lost. I did not know where to start and what language to learn. After some googling I started with Python. I did some small projects, but ended up learning Java properly, using the book "Head-First Java". I built some small nice projects with it - including a Fishing-Exam App. I actually used it when studying for the exam.
-                    \nWhen I had finished this App, I really wanted to develop Apps for Mobile Devices. Therefore I started learning Flutter. In August of 2021 I started building my first big production App - Fish-Finder. I managed to relase it in the Google Play Store at the end of November.
-                \nThis App also got me my first Junior Developer Job. I started working at MatheArena - a fast growing Ed-Tech Startup located in Austria. There I learned what its like to work in a team, on real world applications and to take responsibility. 
-                ''',
+                """I first started programming by learning from the book 'Head-First Java'. I built a few small projects, including a Fishing-Exam App, which I even used for studying.\n
+After that, I got into mobile development with Flutter. In summer 2021, I built my first production app – Fish-Finder – and released it to the Google Play Store that November.\n
+This project also landed me my first Junior Developer role at MatheArena, a fast-growing EdTech startup in Austria. Over one year, I worked as a Full Stack Software Developer, gaining experience in teamwork, building real-world applications, and taking responsibility.\n
+Later, I began studying Computer Science at the University of Innsbruck, where I specialized in Machine Learning and Natural Language Processing. I worked on several ML projects, including Rankify, focusing on Retrieval-Augmented Generation and intelligent information access.\n
+In 2025, I graduated with a BSc in Computer Science, continuing my journey of combining research and development to create impactful technology.\n""",
                 style: Theme.of(context).textTheme.bodyText1,
               ))
         ],
