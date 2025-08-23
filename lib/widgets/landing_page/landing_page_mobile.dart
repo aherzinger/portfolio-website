@@ -23,7 +23,8 @@ class MobileLandingPage extends StatelessWidget {
                   children: [
                     AutoSizeText(
                       'Welcome',
-                      style: Theme.of(context).textTheme.headline1!.copyWith(fontSize:60),
+                      style: Theme.of(context).textTheme.headline1!.copyWith(fontSize:60,),
+
                       maxLines: 1,
                     ),
                     SizedBox(

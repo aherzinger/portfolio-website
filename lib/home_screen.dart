@@ -19,14 +19,38 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     screensize = MediaQuery.of(context).size;
-    return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size(screensize.width, 0.1 * screensize.height),
-        child: CustomAppBar(),
-      ),
-      key: _myService.scaffoldKey,
-      drawer: MobileDrawer(),
-      body: BodyBuilder(screensize.height, screensize.width)
+    return Stack(
+      children: [
+        // Gradient background
+        Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color(0xFF06363D),
+                Color(0xFF085558),
+                Color(0xFF0D6F73),
+                Color(0xFF085558),
+                Color(0xFF06363D),
+               ],
+
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+        ),
+
+        // Your scaffold on top
+        Scaffold(
+          backgroundColor: Colors.transparent, // important!
+          key: _myService.scaffoldKey,
+          appBar: PreferredSize(
+            preferredSize: Size(screensize.width, 0.1 * screensize.height),
+            child: CustomAppBar(),
+          ),
+          drawer: MobileDrawer(),
+          body: BodyBuilder(screensize.height, screensize.width),
+        ),
+      ],
     );
   }
 }

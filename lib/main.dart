@@ -19,43 +19,57 @@ class MyApp extends StatelessWidget {
         AppLocalizations.delegate,
       ],
       theme: ThemeData(
-          primarySwatch: Colors.blue,
-          hoverColor: Color(0xff06133f),
-          hintColor: Color(0xff071852),
-          focusColor: Color(0xfff76c6c),
-          shadowColor: Color(0xffa8d0e6),
-          cardColor: Color(0xff050035),
-          textTheme: TextTheme(
-              headline1: GoogleFonts.zenDots(
-                  fontSize: 200,
-                  color: Color(0xfff76c6c),
-                  fontWeight: FontWeight
-                      .w600), //#TextStyle(fontSize: 200, color: Color(0xfff76c6c), fontFamily: 'Dosis', fontWeight: FontWeight.w600),
-              headline2: GoogleFonts.zenDots(
-                  fontSize: 25,
-                  color: Color.fromRGBO(236, 240, 241, 0.75),
-                  fontWeight: FontWeight.w400),
-              subtitle1: GoogleFonts.zenDots(
-                  fontSize: 22,
-                  fontStyle: FontStyle.normal,
-                  color: Color(0xffd0d3d4)),
-              subtitle2: GoogleFonts.zenDots(
-                  fontSize: 50,
-                  color: Color(0xfff76c6c),
-                  fontWeight: FontWeight.w600),
-              bodyText1: GoogleFonts.workSans(
-                fontSize: 18,
-                color: Color.fromRGBO(236, 240, 241, 0.9),
-                height: 1.6,
-              ),
-              bodyText2: GoogleFonts.workSans(
-                  fontSize: 18, color: Color(0xfff76c6c), height: 1.6),
-              overline: GoogleFonts.zenDots(
-                  fontSize: 28,
-                  color: Color(0xfff76c6c),
-                  fontWeight: FontWeight.w600),
-              caption:
-                  GoogleFonts.zenDots(fontSize: 28, color: Color(0xfff76c6c)))),
+  brightness: Brightness.dark,
+  primaryColor: Color(0xFF0D6F73), // fresh turquoise-teal
+  scaffoldBackgroundColor: Color(0xFF06363D), // deep dark teal
+  cardColor: Color(0xFF085558), // mid teal
+  hintColor: Color(0xFF84BABF), // soft aqua
+  focusColor: Color(0xFF0D6F73), // turquoise focus
+  hoverColor: Color(0xFF0D6F73).withOpacity(0.8),
+  shadowColor: Color(0xFF84BABF).withOpacity(0.4),
+
+  textTheme: TextTheme(
+    headline1: GoogleFonts.zenDots(
+      fontSize: 200,
+      color: Color(0xFF84BABF), // strong turquoise
+      fontWeight: FontWeight.w600,
+    ),
+    headline2: GoogleFonts.zenDots(
+      fontSize: 25,
+      color: Color(0xFF84BABF),//Color(0xFFE0EDE9).withOpacity(0.9), // soft white-aqua
+      fontWeight: FontWeight.w400,
+    ),
+    subtitle1: GoogleFonts.zenDots(
+      fontSize: 22,
+      fontStyle: FontStyle.normal,
+      color: Colors.white,//Color(0xFF84BABF), // muted aqua
+    ),
+    subtitle2: GoogleFonts.zenDots(
+      fontSize: 50,
+      color: Color(0xFF84BABF), // turquoise
+      fontWeight: FontWeight.w600,
+    ),
+    bodyText1: GoogleFonts.workSans(
+      fontSize: 18,
+      color: Colors.white,//Color(0xFFE0EDE9).withOpacity(0.95), // light aqua-white
+      height: 1.6,
+    ),
+    bodyText2: GoogleFonts.workSans(
+      fontSize: 18,
+      color: Colors.white,//Color(0xFF84BABF), // aqua accent text
+      height: 1.6,
+    ),
+    overline: GoogleFonts.zenDots(
+      fontSize: 28,
+      color: Colors.white,//Color(0xFF84BABF), // turquoise emphasis
+      fontWeight: FontWeight.w600,
+    ),
+    caption: GoogleFonts.zenDots(
+      fontSize: 28,
+      color: Color(0xFF085558), // mid teal for subtle detail
+    ),
+  ),
+),
       home: HomeScreen(),
     );
   }

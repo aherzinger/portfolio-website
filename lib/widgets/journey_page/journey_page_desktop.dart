@@ -59,7 +59,7 @@ class DesktopJourneyPage extends StatelessWidget {
                   indicatorStyle: IndicatorStyle(
                       width: 30,
                       padding: EdgeInsets.symmetric(horizontal: 20),
-                      color: Theme.of(context).focusColor),
+                      color: Theme.of(context).hintColor),
                   afterLineStyle:
                       LineStyle(color: Theme.of(context).shadowColor),
                   startChild: Text(
@@ -82,7 +82,7 @@ class DesktopJourneyPage extends StatelessWidget {
                   indicatorStyle: IndicatorStyle(
                       width: 30,
                       padding: EdgeInsets.symmetric(horizontal: 20),
-                      color: Theme.of(context).focusColor),
+                      color: Theme.of(context).hintColor),
                   startChild: Text(
                     'Winter 2021',
                     style: Theme.of(context).textTheme.bodyText2,
@@ -107,7 +107,7 @@ class DesktopJourneyPage extends StatelessWidget {
                   indicatorStyle: IndicatorStyle(
                       width: 30,
                       padding: EdgeInsets.symmetric(horizontal: 20),
-                      color: Theme.of(context).focusColor),
+                      color: Theme.of(context).hintColor),
                   startChild: Text(
                     'November 2021',
                     style: Theme.of(context).textTheme.bodyText2,
@@ -132,7 +132,7 @@ class DesktopJourneyPage extends StatelessWidget {
                   indicatorStyle: IndicatorStyle(
                       width: 30,
                       padding: EdgeInsets.symmetric(horizontal: 20),
-                      color: Theme.of(context).focusColor),
+                      color: Theme.of(context).hintColor),
                   startChild: Text(
                     'February 2022',
                     style: Theme.of(context).textTheme.bodyText2,
@@ -158,7 +158,7 @@ class DesktopJourneyPage extends StatelessWidget {
                     indicatorStyle: IndicatorStyle(
                         width: 30,
                         padding: EdgeInsets.symmetric(horizontal: 20),
-                        color: Theme.of(context).focusColor),
+                        color: Theme.of(context).hintColor),
                     startChild: Text(
                       'October 2022',
                       style: Theme.of(context).textTheme.bodyText2,
@@ -176,76 +176,82 @@ class DesktopJourneyPage extends StatelessWidget {
                     beforeLineStyle:
                         LineStyle(color: Theme.of(context).shadowColor)),
                 TimelineTile(
-  alignment: TimelineAlign.center,
-  indicatorStyle: IndicatorStyle(
-      width: 30,
-      padding: EdgeInsets.symmetric(horizontal: 20),
-      color: Theme.of(context).focusColor),
-  startChild: Text(
-    '2023 - 2024',
-    style: Theme.of(context).textTheme.bodyText2,
-    textAlign: TextAlign.end,
-  ),
-  endChild: Container(
-    height: 99,
-    child: AutoSizeText(
-      'Dived into Machine Learning and NLP',
-      style: Theme.of(context).textTheme.bodyText1,
-      group: timeLineGroup,
-    ),
-    alignment: Alignment.centerLeft,
-  ),
-  beforeLineStyle: LineStyle(color: Theme.of(context).shadowColor),
-  afterLineStyle: LineStyle(color: Theme.of(context).shadowColor),
-),
-TimelineTile(
-  isLast: false,
-  alignment: TimelineAlign.center,
-  indicatorStyle: IndicatorStyle(
-      width: 30,
-      padding: EdgeInsets.symmetric(horizontal: 20),
-      color: Theme.of(context).focusColor),
-  startChild: Text(
-    'Spring 2025',
-    style: Theme.of(context).textTheme.bodyText2,
-    textAlign: TextAlign.end,
-  ),
-  endChild: Container(
-    height: 99,
-    child: AutoSizeText(
-      'Worked on Rankify an various other Machine Learning projects',
-      style: Theme.of(context).textTheme.bodyText1,
-      group: timeLineGroup,
-    ),
-    alignment: Alignment.centerLeft,
-  ),
-  beforeLineStyle: LineStyle(color: Theme.of(context).shadowColor),
-  afterLineStyle: LineStyle(color: Theme.of(context).shadowColor),
-),
-TimelineTile(
-  isLast: true,
-  alignment: TimelineAlign.center,
-  indicatorStyle: IndicatorStyle(
-      width: 30,
-      padding: EdgeInsets.symmetric(horizontal: 20),
-      color: Theme.of(context).focusColor),
-  startChild: Text(
-    'September 2025',
-    style: Theme.of(context).textTheme.bodyText2,
-    textAlign: TextAlign.end,
-  ),
-  endChild: Container(
-    height: 99,
-    child: AutoSizeText(
-      'Graduated with BSc in Computer Science',
-      style: Theme.of(context).textTheme.bodyText1,
-      group: timeLineGroup,
-    ),
-    alignment: Alignment.centerLeft,
-  ),
-  beforeLineStyle: LineStyle(color: Theme.of(context).shadowColor),
-  afterLineStyle: LineStyle(color: Theme.of(context).shadowColor),
-),
+                  alignment: TimelineAlign.center,
+                  indicatorStyle: IndicatorStyle(
+                      width: 30,
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      color: Theme.of(context).hintColor),
+                  startChild: Text(
+                    '2023 - 2024',
+                    style: Theme.of(context).textTheme.bodyText2,
+                    textAlign: TextAlign.end,
+                  ),
+                  endChild: Container(
+                    height: 99,
+                    child: AutoSizeText(
+                      'Dived into Machine Learning and NLP',
+                      style: Theme.of(context).textTheme.bodyText1,
+                      group: timeLineGroup,
+                    ),
+                    alignment: Alignment.centerLeft,
+                  ),
+                  beforeLineStyle:
+                      LineStyle(color: Theme.of(context).shadowColor),
+                  afterLineStyle:
+                      LineStyle(color: Theme.of(context).shadowColor),
+                ),
+                TimelineTile(
+                  isLast: false,
+                  alignment: TimelineAlign.center,
+                  indicatorStyle: IndicatorStyle(
+                      width: 30,
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      color: Theme.of(context).hintColor),
+                  startChild: Text(
+                    'Spring 2025',
+                    style: Theme.of(context).textTheme.bodyText2,
+                    textAlign: TextAlign.end,
+                  ),
+                  endChild: Container(
+                    height: 99,
+                    child: AutoSizeText(
+                      'Worked on Rankify an various other Machine Learning projects',
+                      style: Theme.of(context).textTheme.bodyText1,
+                      group: timeLineGroup,
+                    ),
+                    alignment: Alignment.centerLeft,
+                  ),
+                  beforeLineStyle:
+                      LineStyle(color: Theme.of(context).shadowColor),
+                  afterLineStyle:
+                      LineStyle(color: Theme.of(context).shadowColor),
+                ),
+                TimelineTile(
+                  isLast: true,
+                  alignment: TimelineAlign.center,
+                  indicatorStyle: IndicatorStyle(
+                      width: 30,
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      color: Theme.of(context).hintColor),
+                  startChild: Text(
+                    'September 2025',
+                    style: Theme.of(context).textTheme.bodyText2,
+                    textAlign: TextAlign.end,
+                  ),
+                  endChild: Container(
+                    height: 99,
+                    child: AutoSizeText(
+                      'Graduated with BSc in Computer Science',
+                      style: Theme.of(context).textTheme.bodyText1,
+                      group: timeLineGroup,
+                    ),
+                    alignment: Alignment.centerLeft,
+                  ),
+                  beforeLineStyle:
+                      LineStyle(color: Theme.of(context).shadowColor),
+                  afterLineStyle:
+                      LineStyle(color: Theme.of(context).shadowColor),
+                ),
               ],
             ),
           ),

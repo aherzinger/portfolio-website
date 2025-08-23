@@ -33,7 +33,7 @@ class DesktopAboutPage extends StatelessWidget {
               SizedBox(
                   width: 375,
                   child: Text(
-                    'Hey there! My name is Andreas Herzinger and I am a young Software Developer from Austria.\n\nSince I was a small child, I always had an interest in math and science. It was just a natural thing to me to explore how things work. From calculating the mass of a whole mountain (yes, a real mountain) to thinking about sizing continents on flat maps - my head was always trying to figure things out. \n\nAbout two years ago I picked up coding and started to grow a big interest in Technology and Computers. ',
+                    "Hi, I’m Andreas Herzinger — a Computer Science graduate and NLP researcher from Austria.\n\n Since childhood, I’ve been fascinated by math and science, always curious about how things work. Whether it was calculating the mass of a mountain or puzzling over how continents fit on a flat map, I loved exploring complex ideas.\n\nThat curiosity naturally led me to technology. I started coding a few years ago, and over time it grew into a passion for Computer Science. Today, I specialize in Natural Language Processing, with a strong focus on Retrieval-Augmented Generation (RAG) and research at the intersection of language, knowledge, and intelligent systems.",
                     style: Theme.of(context).textTheme.bodyText1,
                   ))
             ],
@@ -54,7 +54,7 @@ class DesktopAboutPage extends StatelessWidget {
                         width: 363,
                         decoration: BoxDecoration(
                           border: Border.all(
-                              width: 5, color: Theme.of(context).focusColor),
+                              width: 5, color: Theme.of(context).hintColor),
                         ),
                       ),
                     ),
@@ -64,7 +64,7 @@ class DesktopAboutPage extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: Theme.of(context).cardColor,
                           border: Border.all(
-                              width: 5, color: Theme.of(context).focusColor),
+                              width: 5, color: Theme.of(context).hintColor),
                         ),
                         padding: EdgeInsets.all(20),
                         child: Image.asset('assets/profile_picture.jpeg')),

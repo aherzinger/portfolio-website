@@ -29,15 +29,15 @@ class MobileVisionPage extends StatelessWidget {
               ),
               Container(
               width: 100,
-              decoration: BoxDecoration(
-                  gradient: RadialGradient(colors: [
-                Theme.of(context).focusColor,
-                Theme.of(context).cardColor,
-              ], radius: 0.4, center: Alignment(0, -0.22))),
+              //decoration: BoxDecoration(
+              //    gradient: RadialGradient(colors: [
+              //  Theme.of(context).focusColor,
+              //  Theme.of(context).cardColor,
+              //], radius: 0.4, center: Alignment(0, -0.22))),
               child: Icon(
                 Icons.lightbulb_outline_rounded,
                 size: 100,
-                color: Theme.of(context).focusColor,
+                color: Theme.of(context).hintColor,
               )),
             ],
           ),

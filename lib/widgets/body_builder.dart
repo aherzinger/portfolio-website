@@ -30,7 +30,7 @@ class _BodyBuilderState extends State<BodyBuilder> {
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth > 800) {
         return Container(
-          color: Theme.of(context).cardColor,
+          color: Colors.transparent,
           child: RawScrollbar(
             controller: _myService.scrollController,
             thickness: 10,

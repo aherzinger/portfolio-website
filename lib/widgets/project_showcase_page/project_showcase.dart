@@ -41,8 +41,8 @@ class ProjectShowCase extends StatelessWidget {
       height: 0.8 * height,
       width: 0.5 * height,
       decoration: BoxDecoration(
-          border: Border.all(color: Theme.of(context).shadowColor, width: 2),
-          color: Theme.of(context).hintColor,
+          border: Border.all(color: Theme.of(context).hintColor, width: 2),
+          color: Theme.of(context).focusColor,
           borderRadius: BorderRadius.circular(20)),
       padding: EdgeInsets.symmetric(
           horizontal: 0.02 * width, vertical: 0.02 * height),
@@ -149,7 +149,7 @@ class ProjectShowCase extends StatelessWidget {
               Align(
                 alignment: Alignment.centerLeft,
                 child: SizedBox(
-                height: 0.09 * height,
+                height: 0.10 * height,
                 child: AutoSizeText(
                   description,
                   group: autoSizeGroup,
