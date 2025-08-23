@@ -26,7 +26,7 @@ class MobileAppBar extends StatelessWidget {
                     _myService.scaffoldKey.currentState!.openDrawer();
                   },
                   icon: Icon(Icons.menu),
-                  color: Theme.of(context).focusColor,
+                  color: Theme.of(context).hintColor,
                   iconSize: 35,
                 ),
                 SizedBox(
@@ -38,8 +38,8 @@ class MobileAppBar extends StatelessWidget {
            Align(alignment: Alignment.centerRight,
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 10),
-            child: AutoSizeText('Andreas Herzinger', style: Theme.of(context).textTheme.caption,)),),
-        ],
+            child: AutoSizeText('Andreas Herzinger', style: Theme.of(context).textTheme.headline2!.copyWith(fontSize: 28)),)
+      )],
       ),
     );
   }

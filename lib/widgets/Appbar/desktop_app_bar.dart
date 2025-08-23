@@ -27,7 +27,7 @@ class DesktopAppBar extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 40),
                 child: AutoSizeText(
                   'Andreas Herzinger',
-                  style: Theme.of(context).textTheme.caption,
+                  style: Theme.of(context).textTheme.headline2!.copyWith(fontSize: 28),
                 )),
           ),
           Align(
